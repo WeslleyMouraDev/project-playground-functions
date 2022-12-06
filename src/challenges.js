@@ -1,17 +1,20 @@
 // Desafio 1 - Crie a função compareTrue
 const compareTrue = (param1, param2) => param1 === true && param2 === true;
 
-
-
-
-
 // Desafio 2 - Crie a função splitSentence
+function splitSentence(string) {
+  return string.split(" ")
+ 
+}
 
 // Desafio 3 - Crie a função concatName
+
+
 
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
+
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
