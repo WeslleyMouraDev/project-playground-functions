@@ -77,16 +77,16 @@ const catAndMouse = (mouse, cat1, cat2) => {
 const fizzBuzz = (numbers) => {
   let results = [];
   for (let index = 0; index < numbers.length; index += 1){
-    if (numbers[index] % 3 === 0){
-      results.push('fizz');
-    }
-    else if (numbers[index] % 5 === 0){
-      results.push('buzz');
-    }    
-    else if (numbers[index] % 3 === 0 && index % 5 === 0){
+    if (numbers[index] % 3 === 0 && numbers[index] % 5 === 0){
       results.push('fizzBuzz');
     }
-    else if (numbers[index] % 3 != 0 && index % 5 != 0) {
+    else if (numbers[index] % 3 === 0 && numbers[index] % 5 !== 0){
+      results.push('fizz');
+    }
+    else if (numbers[index] % 3 !== 0 && numbers[index] % 5 === 0){
+      results.push('buzz');
+    }
+    else if (numbers[index] % 3 != 0 && numbers[index] % 5 != 0) {
       results.push('bug!');
     }
   }
