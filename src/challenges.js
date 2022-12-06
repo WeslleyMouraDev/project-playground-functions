@@ -8,8 +8,9 @@ function splitSentence(string) {
 }
 
 // Desafio 3 - Crie a função concatName
-
-
+function concatName(name) {
+  return (`${name[name.length -1]}, ${name[0]}`)
+}
 
 // Desafio 4 - Crie a função footballPoints
 
