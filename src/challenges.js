@@ -14,6 +14,7 @@ function concatName(name) {
 
 // Desafio 4 - Crie a função footballPoints
 
+
 // Desafio 5 - Crie a função highestCount
 
 
