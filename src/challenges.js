@@ -56,7 +56,7 @@ const catAndMouse = (mouse, cat1, cat2) => {
   let cat2distance = 0
   cat1distance = mouse - cat1
   cat2distance = mouse - cat2
-  
+
   cat1distance = Math.abs(cat1distance)
   cat2distance = Math.abs(cat2distance)
   
@@ -71,12 +71,29 @@ const catAndMouse = (mouse, cat1, cat2) => {
   }
 }
 
-// let mouse = 10
-// let cat1 = 8
-// let cat2 = 3
-// console.log('Resultado:' + catAndMouse(mouse, cat1, cat2));
 
 // Desafio 8 - Crie a função fizzBuzz
+
+const fizzBuzz = (numbers) => {
+  let results = [];
+  for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] % 3 === 0){
+      results.push('fizz');
+    }
+    else if (numbers[index] % 5 === 0){
+      results.push('buzz');
+    }    
+    else if (numbers[index] % 3 === 0 && index % 5 === 0){
+      results.push('fizzBuzz');
+    }
+    else if (numbers[index] % 3 != 0 && index % 5 != 0) {
+      results.push('bug!');
+    }
+  }
+  return results;
+}
+console.log('Resultado:' + fizzBuzz([2, 15, 7, 9, 45]));
+
 
 // Desafio 9 - Crie a função encode e a função decode
 
