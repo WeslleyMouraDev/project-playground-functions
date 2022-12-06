@@ -50,11 +50,31 @@ const calcAllAreas = (base, height, form) => {
   }
 }
 
-
-// console.log(`A área do triângulo é: ${calcAllAreas(base, height, form)}`);
-
-
 // Desafio 7 - Crie a função catAndMouse
+const catAndMouse = (mouse, cat1, cat2) => {
+  let cat1distance = 0
+  let cat2distance = 0
+  cat1distance = mouse - cat1
+  cat2distance = mouse - cat2
+  
+  cat1distance = Math.abs(cat1distance)
+  cat2distance = Math.abs(cat2distance)
+  
+  if (cat1distance < cat2distance){
+    return ('cat1')
+  }
+  else if (cat1distance > cat2distance){
+    return ('cat2')
+  }
+  else {
+    return ('os gatos trombam e o rato foge')
+  }
+}
+
+// let mouse = 10
+// let cat1 = 8
+// let cat2 = 3
+// console.log('Resultado:' + catAndMouse(mouse, cat1, cat2));
 
 // Desafio 8 - Crie a função fizzBuzz
 
